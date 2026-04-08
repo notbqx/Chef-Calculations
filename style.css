@@ -9,6 +9,33 @@ body {
     background-color: #0f1b3d;
 }
 
+.quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px; /* Same width as your container */
+    margin-bottom: 10px;
+}
+
+.nav-arrow {
+    background: #ffffff33; /* Semi-transparent white */
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav-arrow:hover {
+    background: white;
+    color: #1a2d63;
+}
+
+/* Optional: Hide the "Previous" button on the first question */
+.hidden-nav {
+    visibility: hidden;
+}
+
 .quiz-container {
     display: none;
     text-align: center;     
