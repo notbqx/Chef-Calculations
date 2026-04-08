@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    min-height: 100vh;      
+    margin: 0;             
+    font-family: Arial, sans-serif;
+    background-color: #0f1b3d;
+}
+
+.quiz-container {
+    display: none;
+    text-align: center;     
+    background: rgb(29, 34, 105);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 1000px; 
+    height: 700px;  
+    overflow-wrap: break-word; 
+    hyphens: auto;      
+}
+
+.quiz-container.active {
+    display: block;
+}
+
+.quiz-container .question {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.quiz-container .user-input {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.quiz-container .check-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quiz-container .check-btn:hover {
+    background-color: #218838;
+}
+
+.quiz-container .showanswer-btn, .quiz-container .showformula-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.quiz-container .showanswer-btn:hover, .quiz-container .showformula-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.feedback {
+    color: #fff;
+}
+
+.formula-image {
+    display: none;
+    margin-top: 20px;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
